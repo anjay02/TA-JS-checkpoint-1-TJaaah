@@ -20,6 +20,10 @@ function sum(a, b) {
 
 5. Declare a function named `sayHello` the accepts a parameter `name` and returns the name like `Hello Arya`.
 
+function sayHello(name){
+return `Hello + " " + name`;
+}
+
 6. What will be the output of the function below and why?
 
 ```js
