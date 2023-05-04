@@ -12,12 +12,47 @@ while (i < 3) {
 
 3. Write a function named `getEvenSum` that accepts a parameter `max`. Return the sum of all even numbers. The value of max should default to 10.
 
+function getEvenSum(max=10){
+  let sum = 0;
+  for(i=0; i <= max; i++){
+    if (i % 2 === 0){
+      sum += i;
+    }
+  }
+  return sum;
+}
+
 4. Write a function named `getOddSum` that accepts a parameter `max`. Return the sum of all odd numbers. The value of max should default to 10.
+
+function getOddSum(max=10){
+  let sum = 0;
+  for(i=0; i <= max; i++){
+    if (i % 2 !== 0){
+      sum += i;
+    }
+  }
+  return sum;
+}
 
 5. Write a function named `getProductOfDigits` that accepts a parameter `num`. It returns the product of all the digits in the number.
 
 - If the input value is less than 0 return `not a valid input`
 - For example if the input is `123` output should be `6`.
+
+function getProductOfDigits(num){
+  if (num >= 0 ){
+    let product = 1;
+    while(num !== 0){
+      product = product * (num % 10);
+      num = Math.floor(num/10)
+    }
+     return product; 
+
+  } else {
+    return  `not a valid input`;
+  }
+}
+``
 
 6. What will be the output of the following code below in multiple conditions? Explain with reason?
 
